@@ -27,15 +27,18 @@ Poor data quality leads to inaccurate analytics and business decisions.
 ## Solution
 
 The system performs the following pipeline:
+
+```
 Multiple Data Sources
-↓
+        ↓
 Data Preprocessing
-↓
+        ↓
 Similarity Matching
-↓
+        ↓
 Entity Resolution
-↓
+        ↓
 Clean Unified Dataset
+```
 
 ---
 
@@ -50,11 +53,22 @@ Clean Unified Dataset
 ---
 
 ## Project Structure
-data/ → Raw customer datasets
-docs/ → Project documentation
-src/ → Core processing modules
-run_project.py → Main execution script
-requirements.txt → Python dependencies
+
+```
+ai-data-integration-quality-analytics
+│
+├── data/               → Raw customer datasets
+├── docs/               → Project documentation
+├── src/                → Core processing modules
+│   ├── preprocess.py
+│   ├── similarity.py
+│   ├── entity_resolution.py
+│   └── visualize.py
+│
+├── run_project.py      → Main execution script
+├── requirements.txt    → Python dependencies
+└── README.md
+```
 
 ---
 
